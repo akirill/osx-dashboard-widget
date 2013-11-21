@@ -110,6 +110,7 @@ body {
     margin-left: auto;
     width: 46px;
     margin-right: auto;
+    white-space: nowrap;
 }
 
 #startbutton {

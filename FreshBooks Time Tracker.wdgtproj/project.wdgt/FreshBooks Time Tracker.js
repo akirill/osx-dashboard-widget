@@ -4,7 +4,7 @@
 com.freshbooks.api.UA = "FreshBooks Time Tracker Widget 1.0.6";
 
 debug = false;
-xmlTimeout = 15 * 1000; // Wait this many milliseconds for FreshBooks to reply before cancelling an XML call.
+xmlTimeout = 150 * 1000; // Wait this many milliseconds for FreshBooks to reply before cancelling an XML call.
 
 //
 // Just sets the given named element's visibility style accordingly.
@@ -334,7 +334,7 @@ function loadTasks()
 				} else {
 					// We're done loading stuff!
 					// Flip to the front after a short delay (weird flippy behaviour otherwise)
-					setTimeout("showFront();",500);
+					setTimeout("showFront();",1000);
 					$("#done")[0].object.setEnabled(true);
 					// We've finished loading tasks, and we've sent off all
 					// outstanding requests.  It's time to update the Tasks
